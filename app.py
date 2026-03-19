@@ -12,7 +12,7 @@ def main():
 
 @app.route("/transferMoney",methods=["GET","POST"])
 def transgerMoney():
-    return(render_template("transgerMoney.html"))
+    return(render_template("transferMoney.html"))
 
 if __name__ == "__main__":
         app.run()   
