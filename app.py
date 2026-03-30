@@ -18,5 +18,9 @@ def transgerMoney():
 def depositMoney():
     return(render_template("depositMoney.html"))
 
+@app.route("/message",methods=["GET","POST"])
+def message():
+    return(render_template("message.html"))
+
 if __name__ == "__main__":
         app.run()   
