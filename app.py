@@ -22,5 +22,9 @@ def depositMoney():
 def message():
     return(render_template("message.html"))
 
+@app.route("/voting", methods=["GET", "POST"])
+def voting():
+    return(render_template("voting.html"))
+
 if __name__ == "__main__":
         app.run()   
